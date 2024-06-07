@@ -1,0 +1,6 @@
+/vendor/
+/assets/templates/*.php
+.idea
+node_modules
+.env
+*xml

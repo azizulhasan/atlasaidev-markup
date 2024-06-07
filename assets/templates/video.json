@@ -1,0 +1,64 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Introducing the self-driving bicycle in the Netherlands",
+  "description": "",
+  "thumbnailUrl": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+  ],
+  "uploadDate": "2016-03-31T08:00:00+08:00",
+  "duration": "PT1M54S",
+  "contentUrl": "https://www.example.com/video/123/file.mp4",
+  "additionalContentUrls": [
+    "https://www.example.com/video/124/file.mp4",
+    "https://www.example.com/video/125/file.mp4"
+  ],
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": { "@type": "WatchAction" },
+    "userInteractionCount": 5647018
+  },
+  "regionsAllowed": "US,NL",
+  "author": {
+    "@type": "Person",
+    "name": "Your Name",
+    "url": "URL_OF_AUTHOR_PROFILE"
+  },
+  "commentCount": 500,
+  "interactionCount": "User views: 1500, Likes: 1200, Dislikes: 50, Comments: 500",
+  "datePublished": "2023-01-15T08:00:00+08:00",
+  "dateModified": "2023-01-16T10:30:00+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "URL_OF_VIDEO_PAGE"
+  },
+  "videoQuality": "HD",
+  "transcript": "URL_OF_TRANSCRIPT_DOCUMENT",
+  "genre": "Technology",
+  "keywords": "self-driving bicycle, urban mobility, Amsterdam, technology",
+  "isFamilyFriendly": true,
+  "requiresSubscription": false,
+  "publisher": {
+    "@type": "Organization",
+    "name": "Google Netherlands",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "URL_OF_ORGANIZATION_LOGO"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "comment": [
+    {
+      "@type": "Comment",
+      "text": "Great innovation! Looking forward to trying it out.",
+      "author": {
+        "@type": "Person",
+        "name": "Commenter1",
+        "url": "URL_OF_COMMENTER_PROFILE"
+      },
+      "datePublished": "2023-01-16T12:45:00+08:00"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "AudioObject",
+  "name": "Example Audio",
+  "description": "This is an example audio file showcasing additional information.",
+  "contentUrl": "",
+  "additionalContentUrls": [],
+  "encodingFormat": "audio/mpeg",
+  "duration": "PT3M30S",
+  "datePublished": "2024-01-16",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "userInteractionCount": 1000
+  },
+  "author": {
+    "@type": "Person",
+    "name": "John Doe",
+    "url": "https://example.com/johndoe"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Audio Company",
+    "url": "https://example.com/audiocompany",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://example.com/audiocompany-logo.jpg"
+    }
+  },
+  "inLanguage": "en",
+  "keywords": ["example", "audio", "sample"],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "transcript": "https://example.com/audio-transcript.txt",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://example.com/audio-detail-page"
+  }
+}

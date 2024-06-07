@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "headline": "",
+  "datePublished": "",
+  "dateModified": "",
+  "dateCreated": "",
+  "author": {
+    "@type": "Person",
+    "name": "Nymul Islam",
+    "url": "http://schema.test:8888/author/admin/",
+    "sameAs": [
+      "http://schema.test:8888"
+    ],
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://2.gravatar.com/avatar/8054eef90d6d3a9f778446a45df971ea?s=96&d=mm&r=g",
+      "height": 96,
+      "width": 96
+    }
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How to find an apprenticeship?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>We provide an official service to search through available apprenticeships. To get started, create an account on our platform, specifying the desired region, and your preferences. You will gain access to a comprehensive list of officially registered open apprenticeships. Take the first step towards your career by exploring the opportunities available to you.</p>"
+      }
+    }
+  ]
+}
