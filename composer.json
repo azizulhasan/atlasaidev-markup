@@ -1,16 +1,16 @@
 {
-    "name": "mac/schema",
+    "name": "atasaidev/schema",
     "description": "dev",
     "type": "wordpress-plugin",
     "autoload": {
         "psr-4": {
-            "AtlasAiDev\\MarkUp\\": "src/"
+            "AtlasAiDev\\MarkUp\\": "src"
         }
     },
     "authors": [
         {
-            "name": "Nymul Islam Moon",
-            "email": "nymulislam.webappick@gmail.com"
+            "name": "Azizul Hasan",
+            "email": "azizulhasan.cr@gmail.com"
         }
     ],
     "minimum-stability": "dev",

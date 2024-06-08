@@ -2,20 +2,20 @@
 /**
  * MarkUp
  *
- * @package           MarkUp
- * @author            Nymul Islam
- * @copyright         2024 Nymul Islam
+ * @package           AtlasAiDev MarkUp
+ * @author            Azizul Hasan
+ * @copyright         2024 Azizul Hasan
  * @license           GPL-2.0-or-later
  *
  * @wordpress-plugin
  * Plugin Name:       MarkUp
- * Plugin URI:        https://example.com/plugin-name
+ * Plugin URI:        https://atlasaidev.com
  * Description:       Description of the plugin.
  * Version:           1.0.0
  * Requires at least: 5.2
  * Requires PHP:      7.4
- * Author:            Nymul Islam
- * Author URI:        https://example.com/plugin-name
+ * Author:            Azizul Hasan
+ * Author URI:        https://atlasaidev.com
  * Text Domain:       MarkUp
  * License:           GPL v2 or later
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
@@ -37,9 +37,17 @@ You should have received a copy of the GNU General Public License
 along with {MarkUp}. If not, see {URI to Plugin License}.
 */
 
-defined('ABSPATH') or die('Hay, You can not access the area');
+// If this file is called directly, abort.
+if (!defined('WPINC')) {
+    die;
+}
 
-require_once __DIR__ . '/vendor/autoload.php';
+// Absolute path to the WordPress directory.
+if (!defined('ABSPATH')) {
+    define('ABSPATH', dirname(__FILE__) . '/');
+}
+
+require_once 'vendor/autoload.php';
 
 if( ! function_exists('is_plugin_active') ) {
     include_once( ABSPATH . 'wp-admin/includes/plugin.php');
@@ -132,4 +140,5 @@ if ( ! class_exists( 'MarkUp' ) ) {
 function markup() {
     return MarkUp::init();
 }
+
 markup();

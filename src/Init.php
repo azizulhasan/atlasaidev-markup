@@ -33,7 +33,7 @@ class Init {
          * Product Schema
          */
         if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
-            if ( is_product() ) {
+            if ( \is_product() ) {
                 new Product( $post->ID );
             }
         }
@@ -41,14 +41,14 @@ class Init {
         /**
          * Website Schema
          */
-        if ( ! is_admin() ) {
+        if ( ! is_admin() && $post ) {
             new Website( $post->ID );
         }
 
         /**
          * Article Schema
          */
-        if ( ( 'docs' === get_post_type( $post->ID ) || 'post' == get_post_type( $post->ID ) ) && ( is_single() || is_singular() ) && ( ! function_exists('is_product')  )  ) {
+        if ( $post && (  'docs' === get_post_type( $post->ID ) || 'post' == get_post_type( $post->ID ) ) && ( is_single() || is_singular() ) && ( ! function_exists('is_product')  )  ) {
             if ( 'docs' === get_post_type( $post->ID ) ) {
                 new TechArticle( $post->ID ); // this section will move to article folder causes this will run only article or blog runs
             } else {

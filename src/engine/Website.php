@@ -281,10 +281,12 @@ class Website extends BaseEngine {
 
         $author_info = get_userdata($author_id);
 
-        $author['name'] = $author_info->display_name;
+        if(property_exists($author_info, 'display_name')) {
+            $author['name'] = $author_info->display_name;
+        }
 
         if ( ! empty( $author['name'] ) ) {
-            return apply_filters("markup_{this->schema_type}_author", $author);
+            return apply_filters("markup_{$this->schema_type}_author", $author);
         }
 
         return null;
